@@ -14,7 +14,7 @@ DIR=temp-enterprisewebbook-site
 rm -rf $DIR
 
 # Clone the current repo into temp folder
-git clone --depth=1 -b gh-pages --single-branch https://github.com/Farata/EnterpriseWebBook.git $DIR
+git clone --depth=1 -b gh-pages --single-branch git@github.com:merqlove/EnterpriseWebBook.git $DIR
 #git clone git@github.com:gAmUssA/EnterpriseWebBook.git $DIR
 
 # Move working directory into temp folder
@@ -27,7 +27,7 @@ cd $DIR
 # Delete everything
 rm -rf *
 
-echo "enterprisewebbook.com" > CNAME
+echo "eb.mrcr.ru" > CNAME
 
 # Copy website files from real repo
 cp -R ../out/*.html .
